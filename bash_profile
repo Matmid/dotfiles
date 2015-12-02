@@ -1,7 +1,4 @@
-export ANDROID=/Users/adamgeorgeson/Library/Android/sdk
-export GOPATH=/Users/adamgeorgeson/dev/go
-
-export MYSQL_USERNAME='root'
+export MYSQL_USERNAME=root
 export MYSQL_PASSWORD='admin'
 
 export CC=/usr/local/bin/gcc-4.2
@@ -14,19 +11,11 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
-export PATH="$GOPATH/bin:$PATH"
-export PATH="$HOME/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/bin/:$PATH"
-
-export MYSQL_USERNAME=root
-export MYSQL_PASSWORD=admin
-
-export SSL_CERT_FILE=/usr/share/curl/curl-ca-bundle.crt
 
 export DEFERRED_GARBAGE_COLLECTION=true
-export EDITOR='vim'
+export EDITOR='/Applications/RubyMine.app/Contents/MacOS/rubymine'
 export no_proxy=127.0.0.1 # Proxy fix for Rspec
 
-eval "$(hub alias -s)"
 eval "$(rbenv init -)"
 
 source ~/dotfiles/git-completion.bash
@@ -79,18 +68,18 @@ FG_BLUE='\[\033[0;34m\]'
 FG_PURPLE='\[\033[0;35m\]'
 FG_TEAL='\[\033[0;36m\]'
 FG_WHITE='\[\033[0;37m\]'
-FG_ORANGE='\[\033[0;214m\]'
+FG_ORANGE='\[\033[95;38;5;214m\]'
 NO_COLOUR='\[\033[0m\]'
 
 PS1_TIME='\[\033[48;5;0m\033[38;5;250m\]'
 PS1_PATH='\[\033[0;38;5;12m\]'
-PS1_MARKER="$FG_ORANGE"
-GIT_LABEL='\[\033[48;5;234m\033[38;5;214m\]'
+PS1_MARKER='\[\033[0;34m\]'
+GIT_LABEL='\[\033[0;36m\033[0;35m\]'
 GIT_JOIN='\[\033[48;5;179m\033[38;5;30m\]'
 GIT_BRANCH='\[\033[48;5;245m\033[38;5;234m\]'
 GIT_CLEAN='\[\033[48;5;22m\]'
 GIT_DIRTY='\[\033[48;5;88m\]'
-GIT_PATH='\[\033[48;5;0m\033[38;5;214m\]'
+GIT_PATH='\[\033[48;5;0m\033[32m\]'
 SVN_LABEL='\[\033[48;5;97m\033[38;5;17m\]'
 SVN_PATH='\[\033[0;38;5;183m\]'
 SVN_SPACER='\[\033[48;5;250m\]'
@@ -174,7 +163,7 @@ function set_prompt {
   current_branch=$(git branch --no-color | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/")
 
   # Set prompt with GIT labels
-  PS1="$GIT_LABEL ${repo_name} $GIT_BRANCH ${current_branch} ${branch_status} $NO_COLOUR $GIT_PATH\w$NO_COLOR $PS1_MARKER"
+  PS1="$GIT_LABEL${repo_name} $GIT_BRANCH ${current_branch} ${branch_status} $NO_COLOUR $GIT_PATH\w$NO_COLOR\n\[\033[0;33m\]$(date +$FG_YELLOW%H:$FG_ORANGE%M:$FG_RED%S) 🚀 $FG_WHITE "
 }
 
 # Custom window dims & pos for Sublime and Console duo

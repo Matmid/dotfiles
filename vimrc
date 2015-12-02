@@ -9,23 +9,23 @@ call vundle#begin()
 " Plugins managed by Vundle
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
-Plugin 'ervandew/supertab'
-Plugin 'scrooloose/syntastic'
-Plugin 'bling/vim-airline'
-Plugin 'sjl/badwolf'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'tpope/vim-endwise'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'idanarye/vim-merginal'
-Plugin 'fatih/vim-go'
-Plugin 'shime/vim-livedown'
+" Plugin 'kien/ctrlp.vim'
+" Plugin 'ervandew/supertab'
+" Plugin 'scrooloose/syntastic'
+" Plugin 'bling/vim-airline'
+" Plugin 'sjl/badwolf'
+" Plugin 'thoughtbot/vim-rspec'
+" Plugin 'vim-ruby/vim-ruby'
+" Plugin 'tpope/vim-rails'
+" Plugin 'tpope/vim-fugitive'
+" Plugin 'tomtom/tcomment_vim'
+" Plugin 'tpope/vim-endwise'
+" Plugin 'kchmck/vim-coffee-script'
+" Plugin 'cakebaker/scss-syntax.vim'
+" Plugin 'ntpeters/vim-better-whitespace'
+" Plugin 'idanarye/vim-merginal'
+" Plugin 'fatih/vim-go'
+" Plugin 'shime/vim-livedown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -36,7 +36,7 @@ syntax on
 " Theme settings
 set t_Co=256
 set background=dark
-colorscheme badwolf
+" colorscheme badwolf
 let g:airline#extensions#tabline#enabled = 1  " Automatically displays all buffers when there's only one tab open
 let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
@@ -45,9 +45,9 @@ let g:airline#extensions#branch#displayed_head_limit = 10
 let g:airline#extensions#syntastic#enabled = 1
 
 " Open NerdTree on opening of Vim
-autocmd vimenter * NERDTree
-autocmd vimenter * if !argc() | NERDTree | endif
-let NERDTreeShowHidden=1
+" autocmd vimenter * NERDTree
+" autocmd vimenter * if !argc() | NERDTree | endif
+" let NERDTreeShowHidden=1
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
