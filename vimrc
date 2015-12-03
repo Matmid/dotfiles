@@ -11,18 +11,18 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 " Plugin 'kien/ctrlp.vim'
 " Plugin 'ervandew/supertab'
-" Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 " Plugin 'bling/vim-airline'
-" Plugin 'sjl/badwolf'
-" Plugin 'thoughtbot/vim-rspec'
-" Plugin 'vim-ruby/vim-ruby'
-" Plugin 'tpope/vim-rails'
-" Plugin 'tpope/vim-fugitive'
-" Plugin 'tomtom/tcomment_vim'
-" Plugin 'tpope/vim-endwise'
-" Plugin 'kchmck/vim-coffee-script'
-" Plugin 'cakebaker/scss-syntax.vim'
-" Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'sjl/badwolf'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-endwise'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'ntpeters/vim-better-whitespace'
 " Plugin 'idanarye/vim-merginal'
 " Plugin 'fatih/vim-go'
 " Plugin 'shime/vim-livedown'
@@ -36,7 +36,7 @@ syntax on
 " Theme settings
 set t_Co=256
 set background=dark
-" colorscheme badwolf
+colorscheme badwolf
 let g:airline#extensions#tabline#enabled = 1  " Automatically displays all buffers when there's only one tab open
 let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
