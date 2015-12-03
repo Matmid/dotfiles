@@ -107,6 +107,7 @@ set showmatch "show matching brackets
 
 " Map leader to ,
 map , \
+map <F2> :NERDTreeToggle<CR>
 
 " VIM-Rspec
 let g:rspec_command = "!bundle exec rspec -I . {spec}"
