@@ -13,7 +13,7 @@ export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
 export DEFERRED_GARBAGE_COLLECTION=true
-export EDITOR='/Applications/RubyMine.app/Contents/MacOS/rubymine'
+export EDITOR=vim
 export no_proxy=127.0.0.1 # Proxy fix for Rspec
 
 eval "$(rbenv init -)"
