@@ -1,8 +1,6 @@
 export MYSQL_USERNAME=root
 export MYSQL_PASSWORD='admin'
 
-export CC=/usr/local/bin/gcc-4.2
-export CXX=/usr/local/bin/g++-4.2
 export MACOSX_DEPLOYMENT_TARGET=10.9 # Resolves issues with nokogiri gem installation
 
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -163,7 +161,7 @@ function set_prompt {
   current_branch=$(git branch --no-color | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/")
 
   # Set prompt with GIT labels
-  PS1="🌍 🚀 🌜 $GIT_PATH\w$NO_COLOR\[\033[0;33m\] $GIT_BRANCH ${current_branch} ${branch_status} $NO_COLOUR 👉  "
+  PS1="🌍 🚀 🌜 $GIT_PATH\w$NO_COLOR\[\033[0;33m\] $GIT_BRANCH ${current_branch} ${branch_status} $NO_COLOUR \n👉  "
 }
 
 # Custom window dims & pos for Sublime and Console duo
