@@ -40,3 +40,8 @@ fi
 alias findfile='find . -iname'
 alias inspect='du -csh'
 alias fsearch='git ls-files | grep'
+alias gga='function _gga(){ cd ~/development; for i in *; do ( cd $i; git grep "$1" HEAD ); done; cd -; };_gga'
+alias talk_sh='function _talk_sh(){ while true; do (a+=100; say ok -r $a); done; };_talk_sh'
+
+# MISC
+alias weather='curl http://wttr\.in/Newcastle_Upon_Tyne'

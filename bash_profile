@@ -9,6 +9,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+export GEM_SERVER=http://sageone:onesalviaofficinalisone@gems.platform.sageone.com
 
 export DEFERRED_GARBAGE_COLLECTION=true
 export EDITOR=vim

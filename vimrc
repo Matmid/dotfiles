@@ -10,7 +10,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 " Plugin 'kien/ctrlp.vim'
-" Plugin 'ervandew/supertab'
+Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 " Plugin 'bling/vim-airline'
 Plugin 'sjl/badwolf'
@@ -72,13 +72,13 @@ set nobackup
 "set backupdir=~/.vim/backup
 set noswapfile
 
-set pastetoggle=<F2>
+set pastetoggle=<F3>
 
 " last-position-jump
 :au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
 set mouse=a                      " Enable mouse input
-set clipboard+=unnamed           " Use system clipboard
+set clipboard+=unnamed           " Use system clipbard
 noremap ; :
 noremap j gj
 noremap k gk
